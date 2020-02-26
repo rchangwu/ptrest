@@ -21,7 +21,7 @@ public class User {
 	private String name;
 	
 	@Column(name = "birthdate")
-	private String birthdate;
+	private Date birthdate;
 	
 	
 	
@@ -29,7 +29,7 @@ public class User {
 		super();
 	}
 
-	public User(Integer id, String name, String birthdate) {
+	public User(Integer id, String name, Date birthdate) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -48,10 +48,10 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getBirthdate() {
+	public Date getBirthdate() {
 		return birthdate;
 	}
-	public void setBirthdate(String birthdate) {
+	public void setBirthdate(Date birthdate) {
 		this.birthdate = birthdate;
 	}
 	
